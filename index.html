@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
-            --primary: #0056b3; /* Azul Profissional */
+            --primary: #0056b3; 
             --bg: #f4f7f9;
             --card-bg: #ffffff;
             --text: #1f2937;
             --subtext: #6b7280;
         }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', sans-serif;
             background-color: var(--bg);
             color: var(--text);
             margin: 0;
@@ -35,123 +35,18 @@
             text-align: center; 
             margin-bottom: 25px; 
             color: var(--primary);
-            border-bottom: 2px solid #e5e7eb;
-            padding-bottom: 10px;
             font-size: 1.4rem;
-        }
-        .card {
-            background: var(--card-bg);
-            border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 15px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-            transition: transform 0.2s;
-            display: flex;
-            align-items: center;
-        }
-        .card:hover { transform: scale(1.02); }
-        .icon-box {
-            background: #e7f1ff;
-            color: var(--primary);
-            width: 45px;
-            height: 45px;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 15px;
-            flex-shrink: 0;
-        }
-        .cert-info h3 { margin: 0; font-size: 1rem; color: var(--text); }
-        .cert-info p { margin: 5px 0 0; font-size: 0.85rem; color: var(--subtext); }
-        
-        .btn-github {
-            background-color: var(--primary);
-            color: white;
-            padding: 12px 25px;
-            border-radius: 30px;
-            text-decoration: none;
             font-weight: bold;
-            display: inline-block;
-            margin-top: 20px;
         }
-        footer { margin: 50px 0; color: var(--subtext); font-size: 0.8rem; }
-    </style>
-</head>
-<body>
-
-    <div class="header">
-        <img src="https://github.com/ErikTauil.png" alt="Erik Lopes Tauil" class="profile-pic">
-        <h1 style="margin: 15px 0 5px;">Erik Lopes Tauil</h1>
-        <p style="color:var(--subtext); font-weight: 500;">Especialista em Dados | Business Intelligence</p>
-        <a href="https://github.com/ErikTauil/Projetos" class="btn-github">
-            <i class="fab fa-github"></i> Ver Meus Projetos
-        </a>
-    </div>
-
-    <div class="section">
-        <h2 class="section-title">Certificações em Dados</h2>
-
-        <div class="card">
-            <div class="icon-box"><i class="fas fa-database"></i></div>
-            <div class="cert-info">
-                <h3>Introduction to SQL</h3>
-                <p>DataCamp • 2024</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="icon-box"><i class="fas fa-chart-line"></i></div>
-            <div class="cert-info">
-                <h3>Excel: Dominando Funções e Fórmulas</h3>
-                <p>Alura • Formação Excel</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="icon-box"><i class="fas fa-chart-bar"></i></div>
-            <div class="cert-info">
-                <h3>Power BI Desktop: Dashboards Interativos</h3>
-                <p>Alura • Business Intelligence</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="icon-box"><i class="fas fa-table"></i></div>
-            <div class="cert-info">
-                <h3>Planilhas para Análise de Dados</h3>
-                <p>Escola de Dados / Open Knowledge Brasil</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="icon-box"><i class="fas fa-brain"></i></div>
-            <div class="cert-info">
-                <h3>Inteligência Artificial no Contexto do Setor Público</h3>
-                <p>Enap (Escola Nacional de Administração Pública)</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="icon-box"><i class="fab fa-python"></i></div>
-            <div class="cert-info">
-                <h3>Python para Análise de Dados (Pandas)</h3>
-                <p>Alura</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="icon-box"><i class="fas fa-project-diagram"></i></div>
-            <div class="cert-info">
-                <h3>Visualização de Dados com Seaborn e Matplotlib</h3>
-                <p>Alura</p>
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        © 2026 Erik Lopes Tauil • Atualizado via GitHub
-    </footer>
-
-</body>
-</html>
+        
+        /* Estilo dos Cards de Objetivo (Baseado no Exemplo) */
+        .objective-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+        .obj-card {
+            background: var(--card-bg);
+            padding: 15px 10px;
+            border-radius: 1
