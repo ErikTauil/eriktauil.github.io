@@ -49,4 +49,134 @@
         .obj-card {
             background: var(--card-bg);
             padding: 15px 10px;
-            border-radius: 1
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .obj-card i { color: var(--primary); font-size: 1.2rem; margin-bottom: 8px; }
+        .obj-card span { display: block; font-size: 0.75rem; font-weight: bold; color: var(--subtext); }
+
+        /* Estilo dos Cards de Projetos e Certificados */
+        .card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+        }
+        .card-header { display: flex; align-items: center; margin-bottom: 10px; }
+        .icon-circle {
+            background: #e7f1ff;
+            color: var(--primary);
+            width: 40px; height: 40px;
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            margin-right: 12px;
+        }
+        .tag {
+            background: #e1effe;
+            color: var(--primary);
+            padding: 4px 10px;
+            border-radius: 5px;
+            font-size: 0.7rem;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+        .btn-link {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: bold;
+            font-size: 0.8rem;
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+        }
+        .btn-link i { margin-right: 5px; color: var(--primary); }
+
+        footer { margin: 50px 0; color: var(--subtext); font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="https://github.com/ErikTauil.png" alt="Erik Lopes Tauil" class="profile-pic">
+        <p style="color:var(--primary); font-weight:bold; margin-top:20px; margin-bottom:5px; letter-spacing: 1px;">OLÁ, EU SOU</p>
+        <h1 style="margin:0; font-size: 2rem;">Erik Lopes Tauil</h1>
+        <p style="color:var(--subtext); margin-top: 10px; line-height: 1.5;">Especialista em Dados e IA, focado em transformar informações em decisões estratégicas.</p>
+    </div>
+
+    <div class="section">
+        <div class="objective-container">
+            <div class="obj-card">
+                <i class="fas fa-lightbulb"></i>
+                <span>Aprendizado</span>
+            </div>
+            <div class="obj-card">
+                <i class="fas fa-code"></i>
+                <span>Resolução</span>
+            </div>
+            <div class="obj-card">
+                <i class="fas fa-rocket"></i>
+                <span>Eficiência</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="projetos" class="section">
+        <h2 class="section-title">Projetos</h2>
+        
+        <div class="card">
+            <p style="color:#9ca3af; font-size:0.75rem; margin:0 0 10px 0;">2025</p>
+            <h3 style="margin:0 0 10px 0;">Análise de Dados com Python</h3>
+            <p style="color:#6b7280; font-size:0.85rem; margin-bottom:15px;">Desenvolvimento de modelos preditivos e limpeza de dados utilizando bibliotecas Pandas e Scikit-Learn.</p>
+            <div>
+                <span class="tag">PYTHON</span><span class="tag">PANDAS</span>
+            </div>
+            <a href="https://github.com/ErikTauil/Projetos" class="btn-link">
+                <i class="fab fa-github"></i> REPOSITÓRIO GITHUB
+            </a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Certificações</h2>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="icon-circle"><i class="fas fa-database"></i></div>
+                <div>
+                    <h3 style="margin:0; font-size:1rem;">Introduction to SQL</h3>
+                    <p style="margin:0; font-size:0.8rem; color:var(--subtext);">DataCamp • 2024</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="icon-circle"><i class="fas fa-chart-bar"></i></div>
+                <div>
+                    <h3 style="margin:0; font-size:1rem;">Power BI Desktop</h3>
+                    <p style="margin:0; font-size:0.8rem; color:var(--subtext);">Alura • Formação BI</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="icon-circle"><i class="fas fa-brain"></i></div>
+                <div>
+                    <h3 style="margin:0; font-size:1rem;">Inteligência Artificial</h3>
+                    <p style="margin:0; font-size:0.8rem; color:var(--subtext);">Enap • Setor Público</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        © 2026 Erik Lopes Tauil • Desenvolvedor de Dados
+    </footer>
+
+</body>
+</html>
